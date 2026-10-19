@@ -1,0 +1,85 @@
+{
+  "format": "MAS",
+  "app": "flexure",
+  "appName": "Flexure MAS",
+  "studio": "MAS Studio",
+  "kind": "beam",
+  "schema": 1,
+  "savedAt": "2026-10-19T08:40:21.162Z",
+  "units": {
+    "base": "SI-kN-m",
+    "length": "m",
+    "force": "kN",
+    "moment": "kN*m",
+    "distributedLoad": "kN/m",
+    "modulus": "GPa",
+    "sectionDimensions": "mm",
+    "area": "mm^2",
+    "customInertia": "1e6 mm^4",
+    "density": "kg/m^3",
+    "display": "kN-m"
+  },
+  "project": {
+    "title": "Axial loads on a fixed–fixed member"
+  },
+  "model": {
+    "L": 6,
+    "material": "steel",
+    "E": 200,
+    "nu": 0.3,
+    "rho": 7850,
+    "selfWeight": false,
+    "section": {
+      "type": "I",
+      "d": 300,
+      "bf": 150,
+      "tf": 10,
+      "tw": 7,
+      "b": 230,
+      "h": 450,
+      "D": 273,
+      "t": 10,
+      "A": 5960,
+      "Iz": 75.9,
+      "Iy": 5.6,
+      "J": 0.13,
+      "depth": 300,
+      "width": 150
+    },
+    "supports": [
+      {
+        "type": "fixed",
+        "x": 0
+      },
+      {
+        "type": "fixed",
+        "x": 6
+      }
+    ],
+    "loads": [
+      {
+        "type": "point",
+        "dir": "+x",
+        "P": 60,
+        "x": 2
+      },
+      {
+        "type": "udl",
+        "dir": "+x",
+        "w": 10,
+        "x1": 3,
+        "x2": 6
+      },
+      {
+        "type": "point",
+        "dir": "-y",
+        "P": 20,
+        "x": 3
+      }
+    ]
+  },
+  "settings": {
+    "momentDiagram": "up",
+    "sectionCut": 0
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "format": "MAS",
+  "app": "flexure",
+  "appName": "Flexure MAS",
+  "studio": "MAS Studio",
+  "kind": "beam",
+  "schema": 1,
+  "savedAt": "2026-10-19T08:40:21.719Z",
+  "units": {
+    "base": "SI-kN-m",
+    "length": "m",
+    "force": "kN",
+    "moment": "kN*m",
+    "distributedLoad": "kN/m",
+    "modulus": "GPa",
+    "sectionDimensions": "mm",
+    "area": "mm^2",
+    "customInertia": "1e6 mm^4",
+    "density": "kg/m^3",
+    "display": "kip-ft"
+  },
+  "project": {
+    "title": "US units simply supported beam"
+  },
+  "model": {
+    "L": 6.096,
+    "material": "steel",
+    "E": 200,
+    "nu": 0.3,
+    "rho": 7850,
+    "selfWeight": false,
+    "section": {
+      "type": "I",
+      "d": 300,
+      "bf": 150,
+      "tf": 10,
+      "tw": 7,
+      "b": 230,
+      "h": 450,
+      "D": 273,
+      "t": 10,
+      "A": 5960,
+      "Iz": 75.9,
+      "Iy": 5.6,
+      "J": 0.13,
+      "depth": 300,
+      "width": 150
+    },
+    "supports": [
+      {
+        "type": "pin",
+        "x": 0
+      },
+      {
+        "type": "roller",
+        "x": 6.096
+      }
+    ],
+    "loads": [
+      {
+        "type": "udl",
+        "dir": "-y",
+        "w": 14.593902937206362,
+        "x1": 0,
+        "x2": 6.096
+      }
+    ]
+  },
+  "settings": {
+    "momentDiagram": "up",
+    "sectionCut": 0
+  }
+}

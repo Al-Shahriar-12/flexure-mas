@@ -1,0 +1,97 @@
+{
+  "format": "MAS",
+  "app": "flexure",
+  "appName": "Flexure MAS",
+  "studio": "MAS Studio",
+  "kind": "beam",
+  "schema": 1,
+  "savedAt": "2026-10-19T08:40:21.369Z",
+  "units": {
+    "base": "SI-kN-m",
+    "length": "m",
+    "force": "kN",
+    "moment": "kN*m",
+    "distributedLoad": "kN/m",
+    "modulus": "GPa",
+    "sectionDimensions": "mm",
+    "area": "mm^2",
+    "customInertia": "1e6 mm^4",
+    "density": "kg/m^3",
+    "display": "kN-m"
+  },
+  "project": {
+    "title": "Biaxial bending, torsion and axial load"
+  },
+  "model": {
+    "L": 6,
+    "material": "steel",
+    "E": 200,
+    "nu": 0.3,
+    "rho": 7850,
+    "selfWeight": false,
+    "section": {
+      "type": "pipe",
+      "d": 300,
+      "bf": 150,
+      "tf": 10,
+      "tw": 7,
+      "b": 230,
+      "h": 450,
+      "D": 273,
+      "t": 10,
+      "A": 5960,
+      "Iz": 75.9,
+      "Iy": 5.6,
+      "J": 0.13,
+      "depth": 300,
+      "width": 150
+    },
+    "supports": [
+      {
+        "type": "fixed",
+        "x": 0
+      },
+      {
+        "type": "roller",
+        "x": 6
+      }
+    ],
+    "loads": [
+      {
+        "type": "udl",
+        "dir": "-y",
+        "w": 10,
+        "x1": 0,
+        "x2": 6
+      },
+      {
+        "type": "point",
+        "dir": "+z",
+        "P": 12,
+        "x": 3
+      },
+      {
+        "type": "torque",
+        "dir": "+x",
+        "T": 6,
+        "x": 3
+      },
+      {
+        "type": "point",
+        "dir": "-x",
+        "P": 50,
+        "x": 6
+      },
+      {
+        "type": "moment",
+        "dir": "my+",
+        "M": 8,
+        "x": 6
+      }
+    ]
+  },
+  "settings": {
+    "momentDiagram": "up",
+    "sectionCut": 0
+  }
+}

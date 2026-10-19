@@ -1,0 +1,18 @@
+{
+  "name": "Flexure MAS: Beam Analysis",
+  "short_name": "Flexure MAS",
+  "description": "Free, open-source beam analysis for engineering students: SFD, BMD, slope, deflection, axial force, torsion and 3D.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#E7ECEB",
+  "theme_color": "#F8FAF9",
+  "lang": "en",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

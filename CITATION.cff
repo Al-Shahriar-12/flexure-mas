@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If Flexure MAS helped your study or work, please cite it as below."
+title: "Flexure MAS: Beam Analysis for Engineering Students"
+type: software
+authors:
+  - given-names: "MD"
+    family-names: "Al Shahriar"
+    affiliation: "Bangladesh University of Engineering and Technology (BUET)"
+version: "1.0.0"
+date-released: "2026-10-19"
+license: MIT
+repository-code: "https://github.com/Al-Shahriar-12/flexure-mas"
+url: "https://al-shahriar-12.github.io/flexure-mas/"
+abstract: "Free, open-source beam analysis in the browser: shear force, bending moment, slope, deflection, axial force, torsion and a 3D view for beams with any supports, hinges and loads, in SI and US units."
+keywords:
+  - beam analysis
+  - structural analysis
+  - shear force diagram
+  - bending moment diagram
+  - deflection
+  - civil engineering
+  - engineering education
